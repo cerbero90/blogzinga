@@ -21,6 +21,27 @@
   },
   {
     "version": 1,
+    "title": "GianArb | Personal Blog",
+    "topic": "Php, Go, Git, OpenSource, Javascript, Best Practices and other developer stuff",
+    "authors": [
+      "Gianluca Arbezzano"
+    ],
+    "languages": ["en"],
+    "preview": "img/thumbs/gianarb.jpg",
+    "tags": [
+      "git",
+      "opensource",
+      "php",
+      "best-practices",
+      "go",
+      "angularjs"
+    ],
+    "github": "https://github.com/gianarb",
+    "twitter": "https://twitter.com/GianArb",
+    "url": "http://gianarb.it"
+  },
+  {
+    "version": 1,
     "title": "CoseNonJaviste",
     "topic": "Tutorial e approfondimenti sul mondo Java e Android",
     "authors": [
@@ -68,21 +89,21 @@
     "title": "Alessandro Nizzo",
     "topic": "Liferay, BPM, Data Integration e Java",
     "authors": [
-    "Alessandro Nizzo"
+      "Alessandro Nizzo"
     ],
     "languages": ["ita"],
     "preview": "img/thumbs/nizzo.jpg",
     "tags": [
-    "LifeRay",
-    "Bonita BPM",
-    "Pentaho Data Integration",
-    "java"
+      "LifeRay",
+      "Bonita BPM",
+      "Pentaho Data Integration",
+      "java"
     ],
     "github": "https://github.com/anizzo",
     "twitter": "https://twitter.com/alessandronizzo",
     "url": "http://www.alessandronizzo.it/"
-    },
-   {
+  },
+  {
     "version": 1,
     "title": "Antonio Musarra's Blog",
     "topic": "Tutto quello che c'è da sapere su Liferay, SugarCRM e integrazioni qui c'è",
@@ -102,7 +123,7 @@
     "facebook": "https://www.facebook.com/antoniomusarrablog",
     "url": "http://www.dontesta.it/"
   },
-   {
+  {
     "version": 1,
     "title": "Esperienze di programmazione in Java",
     "topic": "Appunti personali su Maven, Spring, Hibernate, Primefaces utili a chi voglia usare queste tecnologie",
@@ -120,14 +141,17 @@
     "github": "https://github.com/cognolato",
     "url": "http://javaliere.blogspot.it/"
   },
-   {
+  {
     "version": 1,
     "title": "Fabio Biondi",
     "topic": "AngularJS, D3.js e tutto il frontend del mondo in questo blog",
     "authors": [
       "Fabio Biondi"
     ],
-    "languages": ["ita","eng"],
+    "languages": [
+      "ita",
+      "eng"
+    ],
     "preview": "img/thumbs/biondi.jpg",
     "tags": [
       "AngularJS",
@@ -179,7 +203,7 @@
     "facebook": "http://fb.me/marcobruni.page",
     "url": "http://www.marcobruni.info/"
   },
-   {
+  {
     "version": 1,
     "title": "GigabytesBlog 2.0",
     "topic": "Notizie aggiornate e commenti sul C++",
@@ -256,7 +280,7 @@
     "github": "https://github.com/eruffaldi/",
     "twitter": "https://twitter.com/eruffaldi",
     "url": "http://teslacore.blogspot.it/"
-  } ,
+  },
   {
     "version": 1,
     "title": "Dede Blog",
@@ -264,7 +288,10 @@
     "authors": [
       "Davis Molinari"
     ],
-    "languages": ["eng","ita"],
+    "languages": [
+      "eng",
+      "ita"
+    ],
     "preview": "img/thumbs/davismol.png",
     "tags": [
       "Python",
@@ -273,7 +300,7 @@
       "VB.NET"
     ],
     "url": "http://www.davismol.net/"
-  } ,
+  },
   {
     "version": 1,
     "title": "ONGOING DEV",
@@ -289,7 +316,7 @@
     ],
     "url": "http://gmariotti.blogspot.it/"
   },
-   {
+  {
     "version": 1,
     "title": "Surviving w/ Android",
     "topic": "Android development blog Tutorials about Android dev topics",
@@ -303,6 +330,46 @@
       "Java"
     ],
     "url": "http://www.survivingwithandroid.com/"
+  },
+  {
+    "version": 1,
+    "title": "Giuseppe Sorce",
+    "topic": "Android development blog",
+    "authors": [
+      "Giuseppe Sorce"
+    ],
+    "languages": ["it"],
+    "preview": "img/thumbs/sorce.png",
+    "tags": [
+      "Android",
+      "Java",
+      "Mobile",
+      "Android Studio"
+    ],
+    "url": "http://www.giuseppesorce.com/",
+    "twitter": "https://twitter.com/warpmobile_it"
+  },
+  {
+    "version": 1,
+    "title": "The Darshan’s Weblog | Il blog di Vincenzo La Spesa",
+    "topic": "Programmazione, Sicurezza, Raspberry Pi e Visione Artificiale",
+    "authors": [
+      "Vincenzo La Spesa"
+    ],
+    "languages": ["ita"],
+    "preview": "img/thumbs/darshan.png",
+    "tags": [
+      "programmazione",
+      "algoritmica",
+      "programmazione concorrente",
+      "algoritmi numerici",
+      "Ruby",
+      "C++",
+      "Java"
+    ],
+    "facebook": "https://www.facebook.com/vincenzo.laspesa",
+    "github": "https://github.com/VincenzoLaSpesa",
+    "twitter": "https://twitter.com/Darshan_tweet",
+    "url": "http://www.thedarshan.com/"
   }
-  
 ]
