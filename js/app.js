@@ -75,7 +75,7 @@ angular.module('about', new AboutApp()).config(['$stateProvider', AboutConfigura
 /*
 App Module
  */
-var BlogList, BlogListApp, BlogListConfiguration, BlogListService, Join, RandomHeader, RandomLabel;
+var BlogList, BlogListApp, BlogListConfiguration, BlogListService, Join, RandomHeader, RandomLabel, Search;
 
 BlogListApp = (function() {
   function BlogListApp() {
@@ -112,7 +112,11 @@ BlogList = (function() {
       return window.open(url);
     };
     $scope.filterByTag = function(tag) {
-      return $scope.filterBlog = tag;
+      if (!$scope.filterBlog) {
+        return $scope.filterBlog = tag;
+      } else {
+        return $scope.filterBlog += ' ' + tag;
+      }
     };
   }
 
@@ -186,7 +190,35 @@ RandomLabel = (function() {
 
 })();
 
-angular.module('bloglist', new BlogListApp()).config(['$stateProvider', BlogListConfiguration]).controller('blogListController', ['$scope', 'BlogListService', 'base64', BlogList]).factory('BlogListService', ['$http', 'base64', BlogListService]).filter('join', [Join]).directive('randomHeader', [RandomHeader]).directive('randomLabel', [RandomLabel]);
+Search = (function() {
+  function Search($filter) {
+    return function(list, searchString) {
+      var result, tokens;
+      if (searchString) {
+        tokens = searchString.split(' ');
+        result = [];
+        _.each(tokens, function(token) {
+          var lookup;
+          lookup = $filter('filter')(list, token);
+          if (result.length === 0) {
+            result = lookup;
+          }
+          if (lookup.length > 0) {
+            return result = _.intersection(result, lookup);
+          }
+        });
+        return result;
+      } else {
+        return list;
+      }
+    };
+  }
+
+  return Search;
+
+})();
+
+angular.module('bloglist', new BlogListApp()).config(['$stateProvider', BlogListConfiguration]).controller('blogListController', ['$scope', 'BlogListService', 'base64', BlogList]).factory('BlogListService', ['$http', 'base64', BlogListService]).filter('join', [Join]).directive('randomHeader', [RandomHeader]).directive('randomLabel', [RandomLabel]).filter('search', ['$filter', Search]);
 
 
 /*
